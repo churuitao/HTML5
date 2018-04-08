@@ -1,0 +1,136 @@
+/*第一部分*/
+.part1-main{
+	width: 100%;
+	height: 300px;
+	background: url("../image/news-back.jpg") no-repeat center;
+}
+.part1-main img{
+	width: 100%;
+	height: 300px;
+}
+/*第二部分*/
+.part2-main{
+	width: 100%;
+	height: 1300px;
+	background: rgb(235,240,245);
+}
+.part2-item{
+	width: 1200px;
+	height: 1300px;
+	margin:0 auto;
+}
+.part2-news-main{
+	width: 1200px;
+	height: 700px;
+	margin-top: 50px;
+}
+.part2-news-item{
+	width: 1200px;
+	height: 340px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.part2-news-img{
+	width: 790px;
+	height: 330px;
+	overflow: hidden;
+}
+.part2-news-img img{
+	width: 820px;
+	height: 330px;
+	transition: all 1s ease-in-out;
+}
+.part2-news-img img:hover{
+	transform: translate(-30px,0);
+}
+.part2-news-info{
+	width: 390px;
+	height: 330px;
+	background: #fff;
+	transition: all 0.4s ease-in-out;
+}
+.part2-news-info:hover{
+	transform: translate(0, -10px);
+	box-shadow: 5px 5px 5px #ccc;     /*制作阴影效果*/
+}
+.part2-news-font{
+	width: 390px;
+	height: 120px;
+}
+.part2-news-font span{
+	text-align: center;
+	display: block;
+	margin:5px auto;
+	font-size: 18px;
+}
+.part2-news-font span a{
+	color: #000;
+	height: 23px;
+}
+.part2-news-font span a:hover{
+	color: rgb(2,171,181);
+}
+.part2-news-font p{
+	display: block;
+	height: 70px;
+	width: 370px;
+    margin: 0 10px;
+    line-height: 24px;
+    font-size: 14.5px;
+    color: rgb(153, 153, 153);
+}
+/*第三部分*/
+.part3-main{
+	width: 100%;
+	height: 1000px;
+}
+.part3-item{
+	width: 1200px;
+	height: 1000px;
+	margin:0 auto;
+}
+.part3-news-item{
+	width: 1200px;
+	height: 370px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.part3-news-info{
+	width: 320px;
+	height: 340px;
+	border:1px solid rgba(102,102,102,.1);
+	transition: all 0.4s ease-in-out;
+}
+.part3-news-info:hover{
+	transform: scale(1.1);
+}
+.part3-news-info img{
+	width: 320px;
+	height: 200px;
+}
+.part3-news-font{
+	width: 284px;
+	height: 105px;
+	margin:15px auto;
+}
+.part3-news-font span a{
+	color: #666666;
+	font-size: 18px;
+	width: 	260px;
+	display: block;
+	word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.part3-news-font span a:hover{
+	color: rgb(2,171,181);
+}
+.part3-news-font p{
+	font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    margin-top: 10px;
+}
