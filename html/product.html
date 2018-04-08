@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ZH">
+<!--定义HTML文件格式-->
+	<head>
+		<meta charset="utf-8"> <!--页面编码-->
+		<title>新能源-产品及解决方案</title> <!--页面的标题-->
+		<meta name="author" content="marchsoft"> <!--定义页面作者-->
+		<meta name="keywords" content="能源"> <!--定义页面关键字-->
+		<link rel="stylesheet" type="text/css" href="../css/product.css">   <!--引入主页 css类-->
+		<link rel="stylesheet" type="text/css" href="../css/currency.css">   <!--引入通用 css类-->
+	<body>
+		<!--页面导航栏-->
+		<header>
+			<div class="top">
+				<div class="logo">
+					<span>New Energy
+					<span>Design</span>
+					</span>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="javascript:;" class="selected menu-submenu2" onmouseover="submenu1.style.display='block'" onmouseout="submenu1.style.display='none'">产品和服务</a></li>
+						<li><a href="programme.html" class="menu-submenu3" onmouseover="submenu2.style.display='block'" onmouseout="submenu2.style.display='none'">市场解决方案</a></li>
+						<li><a href="about.html" class="menu-submenu4" onmouseover="submenu3.style.display='block'" onmouseout="submenu3.style.display='none'">关于我们</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="submenu1" class="submenu1" onmouseover="submenu1.style.display='block'" onmouseout="submenu1.style.display='none'">
+				<div class="submenu1-item">
+					<img src="../image/title-img1.jpg">
+					<div class="submenu1-item-bloak1">
+						<span><a href="javascript:;">&gt;&ensp;工业自动化</a></span>
+						<span><a href="javascript:;">&gt;&ensp;驱动技术</a></span>
+						<span><a href="javascript:;">&gt;&ensp;能源</a></span>
+						<span><a href="javascript:;">&gt;&ensp;医疗</a></span>
+					</div>
+					<div class="submenu1-item-bloak2">
+						<span><a href="javascript:;">&gt;&ensp;交通</a></span>
+						<span><a href="javascript:;">&gt;&ensp;家用方案</a></span>
+						<span><a href="javascript:;">&gt;&ensp;服务</a></span>
+						<span><a href="javascript:;">&gt;&ensp;中低压配电</a></span>
+					</div>
+				</div>
+			</div>
+			<div id="submenu2" class="submenu2" onmouseover="submenu2.style.display='block'" onmouseout="submenu2.style.display='none'">
+				<div class="submenu2-item">
+					<img src="../image/title-img2.jpg">
+					<div class="submenu2-item-bloak1">
+						<span><a href="javascript:;">&gt;&ensp;汽车制造</a></span>
+						<span><a href="javascript:;">&gt;&ensp;电池制造</a></span>
+						<span><a href="javascript:;">&gt;&ensp;化工与制药</a></span>
+						<span><a href="javascript:;">&gt;&ensp;石油与天然气</a></span>
+					</div>
+					<div class="submenu2-item-bloak2">
+						<span><a href="javascript:;">&gt;&ensp;纤维行业</a></span>
+						<span><a href="javascript:;">&gt;&ensp;视频饮料</a></span>
+						<span><a href="javascript:;">&gt;&ensp;机械制造业</a></span>
+						<span><a href="javascript:;">&gt;&ensp;船舶技术</a></span>
+					</div>
+				</div>
+			</div>
+			<div id="submenu3" class="submenu3" onmouseover="submenu3.style.display='block'" onmouseout="submenu3.style.display='none'">
+				<div class="submenu3-item">
+					<img src="../image/title-img3.jpg">
+					<div class="submenu3-item-bloak1">
+						<span><a href="advantage.html">&gt;&ensp;我们的优势</a></span>
+						<span><a href="javascript:;">&gt;&ensp;热门新闻</a></span>
+						<span><a href="javascript:;">&gt;&ensp;最新故事</a></span>
+					</div>
+					<div class="submenu3-item-bloak2">
+						<span><a href="javascript:;">&gt;&ensp;公司荣誉</a></span>
+						<span><a href="news.html">&gt;&ensp;能源资讯</a></span>
+						<span><a href="contact.html">&gt;&ensp;联系我们</a></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="totop">
+			<a href="#"><img src="../image/top.png"></a>
+		</div>
+		<div class="part1-main"></div>
+		<div class="part2-main">
+			<div class="part2-item">
+				<div class="main-title">
+					<div class="main-title-font1">
+						<span>产品中心</span>
+					</div>
+					<div class="main-title-font2">
+						<span>PRODUCT CENTER</span>
+					</div>
+					<div class="main-title-font3">
+						<span>—</span>
+					</div>
+				</div>
+				<div class="part2-product-main">
+					<div class="part2-navigation">
+						<div class="part2-navigation-new">
+							<span>最新产品</span>
+						</div>
+						<div id="pro1" class="toforegreen part2-navigation-item"  onmouseover="showproduct(this,1)">
+							<span>充电器与转换器</span>
+						</div>
+						<div id="pro2" class="part2-navigation-item"  onmouseover="showproduct(this,2)">
+							<span>太阳能</span>
+						</div>
+						<div id="pro3" class="part2-navigation-item"  onmouseover="showproduct(this,3)">
+							<span>电池</span>
+						</div>
+						<div id="pro4" class="part2-navigation-item"  onmouseover="showproduct(this,4)">
+							<span>其他</span>
+						</div>
+					</div>
+					<div id="product1" class="part2-info">
+						<img src="../image/product-img3.png" title="大电流充电器" alt="大电流充电器">
+						<div class="part2-info-font">
+							<span class="part2-info-font-title">MMP 100/30 &amp; 100/50</span>
+							<span class="part2-info-font-name">大电流充电</span>
+							<p>充电器是采用高频电源技术，运用先进的智能动态调整充电技术。工频机是以传统的模拟电路原理来设计的，机器内部电力器件（如变压器、电感、电容器等）都比较大，一般在带载较大运行时存在较小噪声，但该机型在恶劣的电网环境条件中耐抗性能较强，可靠性及稳定性均比高频机强。</p>
+							<button type="button" class="viewmore">查看更多</button>
+						</div>
+					</div>
+					<div id="product2" class="part2-info">
+						<img src="../image/product-img4.png" title="太阳能充电控制器" alt="太阳能充电控制器">
+						<div class="part2-info-font">
+							<span class="part2-info-font-title">MMP 100/30 &amp; 100/50</span>
+							<span class="part2-info-font-name">太阳能充电控制器</span>
+							<p>是用于太阳能发电系统中，控制多路太阳能电池方阵对蓄电池充电以及蓄电池给太阳能逆变器负载供电的自动控制设备，是整个光伏供电系统的核心控制部分。</p>
+							<button type="button" class="viewmore">查看更多</button>
+						</div>
+					</div>
+					<div id="product3" class="part2-info">
+						<img src="../image/product-img1.png" title="石墨烯电池" alt="石墨烯电池">
+						<div class="part2-info-font">
+							<span class="part2-info-font-title">MMP 100/30 &amp; 100/50</span>
+							<span class="part2-info-font-name">石墨烯电池</span>
+							<p>石墨烯电池，利用锂离子在石墨烯表面和电极之间快速大量穿梭运动的特性，开发出的一种新能源电池。</p>
+							<button type="button" class="viewmore">查看更多</button>
+						</div>
+					</div>
+					<div id="product4" class="part2-info">
+						<img src="../image/product-img2.png" title="面板系统监视器" alt="面板系统监视器">
+						<div class="part2-info-font">
+							<span class="part2-info-font-title">MMP 100/30 &amp; 100/50</span>
+							<span class="part2-info-font-name">面板系统监视器</span>
+							<p>监视器作为闭路监控系统的显示终端，是除了摄像头外监控系统中不可或缺的一环。长期以来监视器主要应用在金融、珠宝店、医院、地铁、火车站、飞机场、展览会所、商业写字楼、休闲娱乐场所等等，负责安防方面的工作。</p>
+							<button type="button" class="viewmore">查看更多</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="part3-main">
+			<div class="part3-item">
+				<div class="main-title">
+					<div class="main-title-font1">
+						<span>服务介绍</span>
+					</div>
+					<div class="main-title-font2">
+						<span>SERVICE INTRODUCTION</span>
+					</div>
+					<div class="main-title-font3">
+						<span>—</span>
+					</div>
+					<div class="part3-server-main">
+						<div class="part3-server-title-main">
+							<div  class="part3-server-title">
+								<div id="menu1" class="tobackgreen part3-server-title-menu" onmouseover="showinfo(this,1)">
+									<span>城市管网建设</span>
+								</div>
+								<div class="part3-server-title-menu" onmouseover="showinfo(this,2)">
+									<span>村镇管网建设</span>
+								</div>
+								<div class="part3-server-title-menu" onmouseover="showinfo(this,3)">
+									<span>分布式能源</span>
+								</div>
+								<div class="part3-server-title-menu" onmouseover="showinfo(this,4)">
+									<span>撬装供气系统</span>
+								</div>
+							</div>
+							<div id="info1" class="part3-server-info">
+								<img src="../image/server-img1.jpg" title="城市管网建设" alt="城市管网建设">
+								<div class="part3-server-font">
+									<span>城市管网建设</span>
+									<p>主要业务：天然气 供应、长输管线、天然气加气站、城区官网及庭院入户。随着社会的进步、城市的发展，城市管网建设及管理仍然是一项长期而艰巨的任务，我们需要摸索适合各个城市管网建设及升级的模式，促进城市管网系统平稳、健康、可持续的发展。截止目前，共铺设天然气管线296千米，其中，次高压管线58千米，中压管线105千米，入户管线133千米，天然气用户突破4 万户，其中，大锅炉337户，大锅灶用户680余户，城区天然气用户普及率达到85%以上。</p>
+								</div>
+							</div>
+							<div id="info2" class="part3-server-info">
+								<img src="../image/server-img2.jpg" title="村镇管网建设" alt="村镇管网建设">
+								<div class="part3-server-font">
+									<span>村镇管网建设</span>
+									<p>我们主要业务：天然气供应， 天然气门站建设，加气站建设，村镇管网及庭院入户安装等。公司运行两年来，共铺设天然气管线106千米，其中次高压管线22千米，中亚管线36千米，入户管线48千米。发展天然气用户2.3万余户。年平均向居民供应天然气月5600万m³，年销售收入8900余万元。 从煤球炉到液化气再到管道天然气，烟熏火燎正逐渐远离市民的生活。为实现全域统筹，加快发展镇村管道天然气，我们加速推进燃气一体化工程，计划三年内实现天然气管道“村镇通”。</p>
+								</div>
+							</div>
+							<div id="info3" class="part3-server-info">
+								<img src="../image/server-img3.jpg" title="分布式能源" alt="分布式能源">
+								<div class="part3-server-font">
+									<span>分布式能源</span>
+									<p>是以燃气作为一次能源，利用燃料高品位的能力发电，产生的电力与市电共同满足用户的电力需求，同时通过余热回收利用设备（如溴化锂吸收式机组、余热锅炉及换热器等）回收发电机组余热热量，向用户供热（或供 冷），满足用户的热（冷）需求。分布式能源系统通过冷热电三联供等方式实现能源的梯级利用，综合能源利用率在70%以上。与传统集中式供能方式相比，分布式能源系统不仅满足了冷、热负荷的需 求，同时提供了低成本电力，并大大缓解集中电网建设投资压力，避免远距 离输配电损失。</p>
+								</div>
+							</div>
+							<div id="info4" class="part3-server-info">
+								<img src="../image/server-img4.jpg" title="撬装供气系统" alt="撬装供气系统">
+								<div class="part3-server-font">
+									<span>撬装供气系统</span>
+									<p>集小型贮罐、增压器、气化器、调压、计量、加臭等管路系统于一体的成套供气系统。撬装是指一组设备固定在一个角钢或工字钢制成的底盘上，移动、就位可以使用撬杠，这一组设备是裸露的，在这一点上区别于调压箱。采用创新工艺的高真空多层绝热结构型式、绝热性能稳定可靠、静态蒸发率小、气体损耗极少。设置真空再生仓，确保夹层真空寿命持久，性能稳定。保证连续不间断的现场供气，提高了生产效率和产品质量。主要适用于管道天然气未铺设的小区、宾馆、商业或小型工业等用天然气行业。</p>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="part4-main">
+			<div class="part4-item">
+				<div class="main-title">
+					<div class="main-title-font1">
+						<span>应用领域</span>
+					</div>
+					<div class="main-title-font2">
+						<span>APPLICATION</span>
+					</div>
+					<div class="main-title-font3">
+						<span>—</span>
+					</div>
+					<div class="part4-apply-item">
+						<div class="part4-apply-item-main">
+							<div class="part4-apply-item-font1 font">
+								<span>能耗集中 能用多样化的建筑</span>
+								<p>医院、星级酒店、绿色建筑、商业中心现代科技楼宇、交通枢纽中心等</p>
+							</div>
+							<div  class="apply-item-back">
+								<img src="../image/apply-back1.png">
+							</div>
+						</div>
+						<div class="part4-apply-item-main">
+							<div class="part4-apply-item-font2">
+								<span>能用安全高 节能潜力大的服务设施</span>
+								<p>数据中心、电信及通信基站、UPS电源等</p>
+							</div>
+							<div  class="apply-item-back">
+								<img src="../image/apply-back2.png">
+							</div>
+						</div>
+					</div>
+					<div class="part4-apply-item">
+						<div class="part4-apply-item-main">
+							<div class="part4-apply-item-font3">
+								<span>能耗集中 能用多样化的建筑</span>
+								<p>医院、星级酒店、绿色建筑、商业中心现代科技楼宇、交通枢纽中心等</p>
+							</div>
+							<div  class="apply-item-back">
+								<img src="../image/apply-back2.png">
+							</div>
+						</div>
+						<div class="part4-apply-item-main">
+							<div class="part4-apply-item-font4">
+								<span>能用安全高 节能潜力大的服务设施</span>
+								<p>数据中心、电信及通信基站、UPS电源等</p>
+							</div>
+							<div  class="apply-item-back">
+								<img src="../image/apply-back2.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttom-main">
+			<div class="buttom-item">
+				<div class="buttom-item1">
+					<div>
+						<img src="../image/buttom-1.png">
+						<div>
+							<span class="buttom-font1">高效率</span>
+							<span class="buttom-font2">降低能源成本</span>
+						</div>
+					</div>
+					<div>
+						<img src="../image/buttom-2.png">
+						<div>
+							<span class="buttom-font1">可持续</span>
+							<span class="buttom-font2">所需原料简单</span>
+						</div>
+					</div>
+					<div>
+						<img src="../image/buttom-3.png">
+						<div>
+							<span class="buttom-font1">多用途</span>
+							<span class="buttom-font2">支持各领域能源</span>
+						</div>
+					</div>
+					<div>
+						<img src="../image/buttom-4.png">
+						<div>
+							<span class="buttom-font1">安全性</span>
+							<span class="buttom-font2">不易爆，不易燃</span>
+						</div>
+					</div>
+				</div>
+				<div class="buttom-item2">
+					<div class="buttom-item2-info">
+						<span>公司地址：XXX省XXX市XXX县XXX路XXX号</span>
+						<span>联系电话：020-000000 000-000000</span>
+						<span>联系邮箱：contact@fkadjkhsf.co</span>
+						<span>手机号码：130000000</span>
+					</div>
+					<div class="buttom-item2-img">
+						<img src="../image/QR code.png">
+					</div>
+				<div class="buttom-item3">
+					<p>&copy;2018 三月软件marchsoft 版权所有</p>
+					<div>
+						<span><a href="javascript:;">手机版</a></span>
+						<span>&ensp;&#124;&ensp;</span>
+						<span>本站于<a href="javascript:;">三月软件</a>搭建</span>
+						<span>&ensp;&#124;&ensp;</span>
+						<span><a href="javascript:;">管理员登陆</a></span>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<script>
+	//实现删除以前的效果，添加新的效果
+	function showinfo(e,v){
+		for (var i = e.parentNode.children.length - 1; i >= 0; i--){
+			e.parentNode.children[i].className = "part3-server-title-menu";
+			document.getElementById("info"+(i+1)).style.display = "none";
+		}
+		document.getElementById("info"+v).style.display = "flex";
+		e.className = "tobackgreen part3-server-title-menu";
+	}
+	function showproduct(e,n){
+		for (var i = e.parentNode.children.length - 1; i >= 1; i--){
+			e.parentNode.children[i].className = "part2-navigation-item";
+			document.getElementById("product"+i).style.display = "none";
+		}
+		document.getElementById("product"+n).style.display = "flex";
+		e.className = "toforegreen part2-navigation-item";
+	}
+</script>
+</html>
