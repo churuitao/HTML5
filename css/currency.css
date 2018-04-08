@@ -1,153 +1,273 @@
-/*第一部分*/
-.part1-main{
+/*定义  置顶  效果*/
+@keyframes gradient{
+	0% {      opacity: .6;  }  
+    25% {     opacity: .8;   }  
+    50% {     opacity: 1;   }  
+    75% {     opacity: .7;   }  
+    100% {    opacity: .5;   } 
+}
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+/*页面顶端（logo+导航栏）*/
+header{
 	width: 100%;
-	height: 450px;
-	background: url("../image/contact-back.jpg") no-repeat center;
-}
-/*第二部分*/
-.part2-main{
-	width: 100%;
-	height: 350px;
-}
-.part2-item{
-	width: 1200px;
-	height: 350px;
-	margin:0 auto;
-}
-.part2-font{
-	margin-top: 55px;
-	width:1200px;
-	height:105px;
-}
-.part2-font p{
-	line-height: 35px;
-	color: rgb(102,102,102);
-	font-size: 14px;
-	text-align: center;
-}
-/*第三部分*/
-.part3-main{
-	width: 100%;
-	height: 500px;
-}
-.part3-item{
-	width: 1200px;
-	height: 500px;
-	display: flex;
-	margin:0 auto;
-	justify-content: space-around;
-	align-items: center;
-}
-.part3-item iframe{
-	width: 1200px;
-	height: 500px;
-	border-width:0;
-}
-/*第四部分*/
-.part4-main{
-	width: 100%;
-	height: 750px;
-}
-.part4-item{
-	width: 1200px;
-	height: 750px;
-	margin:0 auto;
-}
-.part4-contactinfo{
-	width:  1200px;
-	height: 500px;
-	margin-top: 60px;
-}
-.part4-contactinfo-item{
-	width:  1200px;
-	height: 60px;
-    text-align: center;
-}
-.part4-contactinfo-item-tiptext,.part4-contactinfo-validate{
-	font-size: 16px;
-	color: rgb(102,102,102);
-	font-weight: bolder;
-}
-.username,.tel,.email{
-	width: 600px;
-	height: 28px;
-	border-color:rgb(218,218,218);
-	border-width: 1px;
-	border-radius: 3px;
-    text-indent: 5px;
-    margin-left: 20px;
-}
-.part4-contactinfo-item-tip{
-	margin-left: 20px;
-	color: red;
-}
-.part4-contactinfo-item-checkbox{
-	display: inline-block;
-}
-.part4-contactinfo-item-checkbox label{
-	margin-right: 120px;
-	margin-left: 20px;
-}
-.part4-contactinfo-item-checkbox label:hover{
-	cursor:pointer 
-}
-.part4-contactinfo-message{
-	width:  1200px;
 	height: 120px;
-	text-align: center;
-	display: flex;
-    justify-content: center;
+	background: rgb(235,240,245);
 }
-#message{
-	width: 600px;
-	height: 100px;
-	margin-left: 25px;
-	resize:none;
-	border-radius: 3px;
-	text-indent: 5px;
-	
+
+nav{
+	/*设置列表显示序列*/
+	list-style-type:none;
+	text-align:center;
+	overflow: hidden; /*滚动条隐藏*/
 }
-.verification{
-	height: 25px;
-	margin-left: 20px;
-	margin-right: 20px;
-	text-indent: 5px;
-	border-width: 1px;
-	border-radius: 3px;
-}
-.validate{
+li{
+	list-style: none;
 	display: inline-block;
+} 
+
+nav ul li a{
+	display: inline-block;
+	padding:22px;
+	color: #000; 
 }
-.part4-contactinfo-item-validate{
-	margin-left: 260px;
+nav ul li a:hover{
+	border-color:rgb(2,171,181); 
+	color: rgb(3,171,181);
+	transform: 1s;
 }
-.part4-contactinfo-validate img{
-	margin-right: 20px;
-	width: 68px;
-	height: 24px;
+.submenu1,.submenu2,.submenu3{
+	display: none;
+	position: relative;
+	top: -30px;
+	width: 100%;
+	background: rgb(235,240,245);
+	z-index: 1;
+	height: 200px;
+	overflow: hidden;
 }
-.part4-contactinfo-validate{
-	display:flex;
-    align-items:center;
-}
-.part4-contactinfo-submit{
-	width:  1200px;
-	height: 60px;
-    margin-top: 30px;
+.submenu1-item ,.submenu2-item ,.submenu3-item{
+	width: 1200px;
+	height: 200px;
+	margin:0 auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	transform: height 1s;
 }
-.button{
-	width: 152px;
-	height: 51px;
-    background-color: #f33; 
-    border: none;
-    color: white;
-    padding: 15px 60px;
+
+.submenu1-item-image,.submenu2-item-image,.submenu3-item-image{
+	width: 550px;
+	height: 200px;
+	background-color: #999;
+}
+
+.submenu1-item-image img,.submenu2-item-image img
+,.submenu3-item-image img{
+	width: 540px;
+	height: 130px;
+	margin-top: 40px;
+    margin-left: 5px;
+}
+
+.submenu1-item-bloak1 , .submenu1-item-bloak2,
+.submenu2-item-bloak1 , .submenu2-item-bloak2,
+.submenu3-item-bloak1 , .submenu3-item-bloak2{
+	width: 200px;
+	height: 150px;
+}
+
+.submenu1-item-bloak1 span , .submenu1-item-bloak2 span,
+.submenu2-item-bloak1 span , .submenu2-item-bloak2 span,
+.submenu3-item-bloak1 span , .submenu3-item-bloak2 span{
+	display: block;
+	margin-top: 10px;
+}
+
+.submenu1-item-bloak1 span a , .submenu1-item-bloak2 span a,
+.submenu2-item-bloak1 span a , .submenu2-item-bloak2 span a,
+.submenu3-item-bloak1 span a , .submenu3-item-bloak2 span a{
+	color: rgb(102,102,102);
+	transition: all 0.5s ease-in-out;
+	display: block;
+}
+.submenu1-item-bloak1 span a:hover,.submenu1-item-bloak2 span a:hover,
+.submenu2-item-bloak1 span a:hover,.submenu2-item-bloak2 span a:hover,
+.submenu3-item-bloak1 span a:hover,.submenu3-item-bloak2 span a:hover{
+	color: rgb(3,171,181);
+	transform: translate(10px,0);
+}
+
+
+/*每块顶端设置*/
+.main-title{
+	width: 1200px;
+	height: 120px;
+	position: relative;
+	top: 60px;
+}
+
+.main-title-font1{
+	text-align: center;
+	font-size: 30px;
+	color: rgb(3,171,181);
+	font-weight: bolder;
+	margin: 0 auto;
+}
+
+.main-title-font2{
+	text-align: center;
+	font-size: 14px;
+	color: rgb(138,138,138);
+	margin: 0 auto;
+}
+
+
+.main-title-font3{
+	text-align: center;
+	font-size: 50px;
+	color: rgb(3,171,181);
+	margin: 0 auto;
+	margin-top: -20px;
+}
+
+/*设置顶部div大小*/
+.top{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+/*头部div*/
+.logo{
+	line-height: 120px;
+}
+/*头部div字*/
+.logo span{
+	font-size: 30px;
+	font-weight: bolder;
+	color: rgb(3,171,181);
+}
+/*头部div字*/
+.logo span span{
+	color: rgb(204,204,204);
+}
+
+/*设置导航栏选中*/
+.selected{
+	color: rgb(2,171,181);
+}
+/*页面底端*/
+.buttom-main {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    /*no-repeat 不平铺*/
+    background: url('../image/buttom-background.jpg') ;   
+}
+
+.buttom-item{
+	width: 1200px;
+	height: 400px;
+	margin:0 auto;
+}
+
+.buttom-item1{
+	width: 1200px;
+	height: 120px;
+}
+
+.buttom-item1>div{
+	display: inline-block;
+	width: 180px;
+    height: 65px;
+	margin:25px 58px;
+}
+
+.buttom-item1 div div{
+	position: relative;
+	top: -15px;
+	width: 100px;
+	height: 40px;
+	display: inline-block;
+}
+
+.buttom-font1{
+	font-size: 16px;
+	font-weight: bolder;
+	color: rgb(127,127,127);
+}
+
+.buttom-font2{
+	display: block;
+	color: rgb(127,127,127);
+	font-size: 14px;
+}
+
+.buttom-item2{
+	width: 1100px;
+	height: 250px;
+	margin:0 auto;
+}
+
+.buttom-item2-info{
+	position: relative;
+	top: 25px;
+	left: 20px;
+	width:300px;
+	height: 120px;
+	display: inline-block;
+}
+
+.buttom-item2-info span{
+	display: inline-block;
+	font-size: 13px;
+	color: rgb(102,102,102);
+	margin-bottom: 7px;
+}
+
+.buttom-item2-img{
+	position: relative;
+	top: 40px;
+	left: 650px;
+	display: inline-block;
+	background-color: #fff;
+	width: 110px;
+	height: 110px;
+}
+
+.buttom-item2-img img{
+	margin:5px;
+	transition:all 1s ease-in-out; 
+}
+.buttom-item2-img img:hover{
+	transform:rotateY(1turn); 
+}
+
+.buttom-item3{
+	margin-top: 70px;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+}
+.buttom-item3 p,.buttom-item3 div span,.buttom-item3 div span a{
+	color: rgb(102,102,102);
+	font-size: 12px;
+}
+
+.buttom-item3 div span a:hover{
+	color: #fff;
+}
+.totop{
+	position: fixed;
+	left: 93%;
+	top: 85%;
+	z-index: 5;
+}
+.totop:hover img{
+	/*forwards 动画停留在最后*/
+	animation: gradient 1s ease-out forwards;
 }
