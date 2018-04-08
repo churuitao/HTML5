@@ -1,6 +1,6 @@
 /*定义  置顶  效果*/
 @keyframes gradient{
-	0% {      opacity: .6;  }  
+    0% {      opacity: .6;  }  
     25% {     opacity: .8;   }  
     50% {     opacity: 1;   }  
     75% {     opacity: .7;   }  
