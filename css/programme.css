@@ -1,0 +1,248 @@
+@keyframes lbt{
+	0% {      margin-left: 0px;       }  
+    25% {      margin-left: -1518px;   }  
+    50% {      margin-left: -3036px;   }  
+    75% {      margin-left: -4554px;   }  
+    100% {      margin-left: -6072px;   } 
+}
+/*设置动画时间及循环遍数 name 总时长 类型 开始前时间*/
+.play{
+	animation: lbt 20s ease-out infinite 2s;
+}
+/*第一部分*/
+.part1-main{	
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+.part1-image{
+	display: flex;
+	height: 600px;
+}
+.part1-image img{
+	width: 1518px;
+	height: 600px;
+}
+/*第二部分*/
+.part2-main{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+.part2-item{
+	width: 1200px;
+	height: 600px;
+	margin:0 auto;
+}
+.genre-main{
+	margin-top: 50px;
+	width: 1200px;
+}
+.genre-item{
+	display: inline-block;
+	width: 270px;
+	height: 180px;
+	margin:10px 13px;
+}
+.genre-item-font{
+	width: 270px;
+	height: 145px;
+}
+.genre-mark{
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.88);
+   width: 270px;
+	height: 180px;
+}
+.genre-item div{
+	margin-top:5px;
+	text-align: center;
+}
+.genre-item div span{
+	color: rgb(112,112,112);	
+}
+.genre-item div span:hover{
+	color: rgb(3,171,181);
+}
+/*第三部分*/
+.part3-main{
+	width: 100%;
+	height: 900px;
+	overflow: hidden;
+}
+.part3-item{
+	width: 1200px;
+	height: 900px;
+	margin:0 auto;
+}
+.news-main{
+	margin-top: 80px;
+	height: 600px;
+	width: 1200px;
+	font-size: 15px;
+}
+.news-item{
+	height: 300px;
+	background: #eee;
+	box-shadow: 2px 2px 2px #ccc;
+	margin:30px 0;
+}
+.news-item-main{
+	width: 1150px;
+	padding: 20px 20px;	
+}
+.news-phone{
+	font-size: 15px;
+	color: rgb(144,153,172);
+}
+.news-user{
+	display: flex;
+	margin:8px 0;
+}
+.news-user span{
+	margin-left: 15px;
+	font-weight: bold;
+	color: #000;
+}
+.news-info{
+	height: 200px;
+}
+.news-title{
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	color:rgb(26,26,26);
+}
+.news-title:hover,.news-user span:hover{
+	color: rgb(14,153,172);
+}
+.news-main-info{
+	display: flex;
+	height: 105px;
+	margin:8px 0;
+}
+.news-main-info a img{
+	width: 190px;
+	height: 105px;
+	margin:0 10px 0  0;
+	border-radius: 5px;
+}
+.news-font-main span{
+	line-height: 1.8;
+	font-size: 16px;
+	color:rgb(26,26,26);
+}
+.readtext{
+	border: none;
+	margin-left: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	color:rgb(3,171,181); 
+	outline: none;
+	background: transparent;
+}
+.readtext svg{
+	height: 8px;
+    width: 10px;
+    fill: rgb(3,171,181);
+}
+.readtext:hover{
+	color:rgb(3,201,201); 
+}
+.readtext:hover svg{
+	 fill:rgb(3,201,201); 
+}
+.news-actions{
+	width: 700px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+}
+.actions-top,.actions-buttom{
+	width: 70px;
+	height: 30px;
+    color: rgb(0,132,255);
+    background: rgb(229,242,255);
+    border: none;
+    border-radius: 4px;
+    /*点击button按钮不出现边框*/
+    outline: none;
+    cursor: inherit;
+}
+.actions-buttom{
+	width: 30px;
+}
+.actions-buttom svg{
+	transform: rotate(180deg);
+}
+.actions-top svg,.actions-buttom svg{
+	height: 10px;
+    width: 16px;
+    fill: rgb(0,132,255);
+    vertical-align: text-bottom;
+}
+.actions-comment,.actions-share,
+.actions-collect,.actions-thank{
+	width: 100px;
+	height: 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: inherit;
+    background: transparent;
+}
+.actions-comment span,.actions-share span,
+.actions-collect span,.actions-thank span,.actions-etc span{
+	color: rgb(133,144,166);
+}
+.actions-comment svg,.actions-share svg,
+.actions-collect svg,.actions-thank svg{
+	height: 17px;
+    width: 17px;
+    fill: rgb(133,144,166);
+    vertical-align: text-bottom;
+}
+.actions-etc{
+	width: 68px;
+	height: 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 20px;
+    cursor: inherit;
+    background: transparent;
+    text-align: center;
+}
+.actions-etc:hover ul{
+	display:block;
+}
+.actions-etc ul{
+	font-size: 12px;
+	line-height: 1.8;
+	background: #eee;
+	border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+.actions-etc ul li{
+	padding: 5px 10px;
+}
+.actions-etc ul li:hover{
+	background: #ccc;
+}
+.actions-comment:hover span,.actions-share:hover span,
+.actions-collect:hover span,.actions-thank:hover span,.actions-etc:hover span{
+	color: rgb(119,131,156);
+}
+.actions-comment:hover svg,.actions-share:hover svg,
+.actions-collect:hover svg,.actions-thank:hover svg,.actions-etc:hover svg{
+	fill: rgb(119,131,156);
+}
+.actions-top:hover,.actions-buttom:hover{
+	background: rgb(217,237,255);
+}
