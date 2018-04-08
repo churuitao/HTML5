@@ -1,0 +1,328 @@
+/*页面第一部分*/
+.background{
+	width: 100%;
+	margin: 0 auto;
+	height: 550px;
+	background:transparent url(../image/img1.jpg) no-repeat center;			/*背景透明/图片/不重画/中间*/
+	background-size: 
+}
+
+.background-item{
+	width: 1200px;
+	height: 550px;
+	margin:0 auto
+}
+
+.background-item-bg{
+	background:transparent url(../image/border.png) no-repeat center;			/*背景透明/图片/不重画/中间*/
+	position: relative;
+	left: 10%;
+	top: 30%;
+	width: 480px;
+	height: 150px;
+}
+
+.first-font{
+	position: relative;
+	top:20px;
+	color: #000;
+	font-size: 45px;
+	font-weight: bolder;
+	margin-left:40px;
+}
+
+.second-font{
+	position: relative;
+	top:20px;
+	margin-left:45px;
+	color: #000;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.third-font{
+	position: relative;
+	padding: 10px;
+	top:38px;
+	color: #fff;
+	background-color: rgb(3,171,181);
+	font-size: 20px;
+	margin-left:50px;
+}
+/*页面第二部分*/
+
+.part2-main{
+	width: 100%;
+	height: 500px;
+}
+
+.part2-item{
+	width: 1200px;
+	height: 500px;	
+	margin: 0 auto;
+	text-align: center;
+}
+
+.part2-image{
+	position: relative;
+	top:80px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.part2-image div{
+	margin: 0 35px;
+	width: 164px;
+	height: 190px;
+	transition:all 1s ease-in-out; /*设置图片旋转参数*/
+}
+/*鼠标放在div上div旋转*/
+.part2-image div:hover{
+	 transform:rotate(360deg); 
+}
+
+.part2-image div p{
+	position: relative;
+	top:-60px;
+	color: #fff;
+	font-size: 18px;
+}
+/*页面第三部分*/
+.part3-main{
+	width: 100%;
+	height: 530px;
+	background:transparent url(../image/part3-back.png) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+.part3-item{
+	width: 1200px;
+	height: 530px;	
+	margin: 0 auto;
+}
+
+.part3-title{
+	position: relative;
+	top:60px;
+	width: 400px;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 35px;
+}
+
+.part3-title>span>span{
+	font-size: 80px;
+	color: rgb(3,171,181);
+}
+
+.part3-image{
+	position: relative;
+	top:130px;
+	display: inline-block;
+}
+
+.part3-image div{
+	display: inline-block;
+	margin: 0 36px;
+	height: 210px;
+	width: 324px;
+}
+
+.part3-image span{
+	font-size: 18px;
+	color: #fff;
+	margin:0;
+	padding: 0;
+	position: relative;
+	top:-18px;
+}
+
+.part3-image p{
+	color: rgb(177,177,177);
+	line-height:30px;
+	font-size: 14px;
+}
+/*页面第四部分*/
+.part4-main{
+	width: 100%;
+	height: 700px;
+}
+
+.part4-item{
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.part4-item1-main{
+	width:1200px;
+	height:450px;				
+	margin-top: 100px;
+}
+
+.part4-item1-main-item{
+	height: 450px;
+	width: 750px;
+	display: inline-block;
+}
+.part4-item1-image{
+	display: inline-block;
+	width: 431px;
+	height: 372px;
+}
+
+.part4-item1-main-font{
+	margin-bottom: 70px;
+	width: 750px;
+	height: 90px;
+}
+
+.part4-item1-main-font img{
+	display: inline-block;
+}
+
+.part4-font{
+	display: inline-block;
+	width: 620px;
+	height: 80px;
+	margin-left: 30px;
+}
+
+.part4-font span{
+	color: #000;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.part4-font p{
+	color: rgb(102,102,102);
+	font-size: 14px;
+	line-height:30px;
+}
+/*页面第五部分*/
+.part5-main{
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+	background:transparent url(../image/part5-back.jpg) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+.part5-item{
+	width: 1200px;
+	height: 400px;	
+	text-align:center;
+	margin: 0 auto;
+}
+
+.part5-item div{
+	display: inline-block;
+	margin-top: 100px;
+	width: 250px;
+	height: 192px;
+}
+
+.part5-item1{
+	margin-right: 210px;
+	background:transparent url(../image/part5-1.png) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+.part5-item2{
+	background:transparent url(../image/part5-1.png) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+.part5-item3{
+	margin-left: 210px;
+	background:transparent url(../image/part5-1.png) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+
+.part5-item div span{
+	position: relative;
+	top:60px;
+	font-size: 50px;
+	color: rgb(3,171,181);
+}
+
+.part5-item div p{
+	position: relative;
+	top:80px;
+	left: 40px;
+	width: 174px;
+	height: 52px;
+	color: #fff;
+}
+/*页面第七部分*/
+.part6-main{
+	width: 100%;
+	height: 600px;	
+	background:transparent url(../image/part6-back.jpg) no-repeat center;			/*背景透明/图片/不重画/中间*/
+}
+
+.part6-item{
+	width: 1200px;
+	height: 600px;
+	margin:0 auto;
+}
+
+.part6-table{
+	width: 1200px;
+	height: 300px;
+	margin-top:60px;
+}
+
+.part6-table-tr{
+	width: 1200px;
+	height: 147px;;
+}
+
+.part6-table-td{
+	width:530px;
+	height:92px;
+}
+
+.part6-table-td-main{
+	width: 541px;
+    height: 80px;
+    margin: 0px 28px;
+}
+
+.part6-table-td-data{
+	display: inline-block;
+	position: relative;
+    top: -15px;
+	width: 85px;
+	height: 65px;
+}
+
+.part6-table-td-data-day{
+	font-size: 27px;
+	display:block;
+	color: #000;
+}
+
+.part6-table-td-data-year{
+	font-size: 15px;
+	color: #000;
+}
+
+.part6-table-td-news{
+	width: 450px;
+	height: 75px;
+	display: inline-block;
+}
+
+.part6-table-td-news p{
+	margin-top:10px;
+	font-size: 14px;
+	color: rgb(138,138,138);
+}
+
+.part6-table-td-news a{
+	color: #000;
+}
+
+.part6-table-td-news a:hover{
+	color: rgb(3,171,181);
+}
