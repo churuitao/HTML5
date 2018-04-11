@@ -8,6 +8,7 @@
 		<meta name="keywords" content="能源"> <!--定义页面关键字-->
 		<link rel="stylesheet" type="text/css" href="../css/programme.css">   <!--引入本页 css类-->
 		<link rel="stylesheet" type="text/css" href="../css/currency.css">   <!--引入通用 css类-->
+	</head>
 	<body>
 		<!--页面导航栏-->
 		<header>
@@ -80,13 +81,14 @@
 		<div class="totop">
 			<a href="#"><img src="../image/top.png"></a>
 		</div>
-		<div class="part1-main">
-			<div class="part1-image play">
-				<img src="../image/programme-back1.jpg">
-				<img src="../image/programme-back2.jpg">
-				<img src="../image/programme-back3.jpg">
-				<img src="../image/programme-back4.jpg">
-				<img src="../image/programme-back1.jpg">
+		<div class="roll" id="roll">
+			<div class="wrap">
+				<ul>
+					<li><a href="javascript:;"><img src="../image/programme-back1.jpg"></a></li>
+					<li><a href="javascript:;"><img src="../image/programme-back2.jpg"></a></li>
+					<li><a href="javascript:;"><img src="../image/programme-back3.jpg"></a></li>
+					<li><a href="javascript:;"><img src="../image/programme-back4.jpg"></a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="part2-main">
@@ -388,4 +390,20 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+            var oDiv = document.getElementById('roll');
+            var oUl = oDiv.getElementsByTagName('ul')[0];
+            var aLi = oUl.getElementsByTagName('li');
+
+            oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
+            oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+          		setInterval(function(){
+                if(oUl.offsetLeft<-oUl.offsetWidth/2){
+                    oUl.style.left='0';
+                }
+                oUl.style.left=(oUl.offsetLeft-2)+'px';
+            },10);
+        }
+	</script>
 </html>
