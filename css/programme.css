@@ -1,28 +1,7 @@
-@keyframes lbt{
-	0% {      margin-left: 0px;       }  
-    25% {      margin-left: -1518px;   }  
-    50% {      margin-left: -3036px;   }  
-    75% {      margin-left: -4554px;   }  
-    100% {      margin-left: -6072px;   } 
-}
-/*设置动画时间及循环遍数 name 总时长 类型 开始前时间*/
-.play{
-	animation: lbt 20s ease-out infinite 2s;
-}
-/*第一部分*/
-.part1-main{	
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
-}
-.part1-image{
-	display: flex;
-	height: 600px;
-}
-.part1-image img{
-	width: 1518px;
-	height: 600px;
-}
+.roll .wrap { width: 1518px; height: 600px; margin: 0; position: relative; overflow: hidden; }
+.roll ul { position: absolute; top: 0; left: 0; }
+.roll li { float: left; width: 1518px; height: 600px; text-align: center; }
+.roll img{width:1518px;height: 600px;}
 /*第二部分*/
 .part2-main{
 	width: 100%;
